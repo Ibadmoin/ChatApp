@@ -1,3 +1,8 @@
+*{
+/* font-size: 62.5%; */
+}
+
+
 body{
    background: #5983f4;
    display: flex;
@@ -35,10 +40,14 @@ body{
     position: relative;
     border-bottom: 1px solid #ccc;
 }
+.profileContainer{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 
-.current-user img {
-    width: 50px;
 }
+
+
 .current-user h4{
     font-size: 20px;
     color: #5983f4;
@@ -49,6 +58,7 @@ body{
     right: 20px;
     color: #5983f4;
 }
+
 
 .chat-list{
     width: 90%;
@@ -149,16 +159,38 @@ body{
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 20px 10px;
     
 
 }
+.profile{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 
 
-
-.user-detail img {
+/* .user-detail img {
     width: 40px;
     margin-left: 5%;
     
+} */
+
+
+.otherUserProfile{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    
+    
+}
+
+.otherUserProfile img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
 }
 .message-container{
     width: 100%;
@@ -205,6 +237,7 @@ body{
     justify-content: center;
     gap: 20px;
     align-items: center;
+    padding: 40px 20px;
 
 }
 .input-chat input{
@@ -215,6 +248,7 @@ body{
     border-radius: 15px;
     border: none;
     background: #f4f4f4;
+
     
 }
 input:focus{
